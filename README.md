@@ -46,3 +46,13 @@ Please [check out the homepage](https://vite-ts-tailwind-starter.vercel.app/) fo
 ## Contributing
 
 Contributions are welcome! Please follow the [code of conduct](./CODE_OF_CONDUCT.md) when interacting with others.
+
+
+## NOTE
+1. Combined with [vite-boot](https://bestofvue.com/repo/vite--vue--typescript--vuerouter--pinia--tailwind-css--vueuse--template)
+
+## My modifications
+1. 
+
+## My changelog
+1. 

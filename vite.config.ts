@@ -11,6 +11,13 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 export default defineConfig({
+  server: {
+    host: "localhost",
+    port: 8888,
+    open: true,
+    https: false,
+    proxy: {},
+  },
   plugins: [
     vue(),
     AutoImport({
@@ -36,6 +43,24 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
+    },
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+      @import "~/styles/variables.scss";
+    `,
+        javascriptEnabled: true,
+      },
+    },
+  },
+  build: {
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
     },
   },
 })
