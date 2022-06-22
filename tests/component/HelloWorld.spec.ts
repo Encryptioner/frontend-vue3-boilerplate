@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/experimental-ct-vue';
-import HelloWorld from '../../src/components/HelloWorld.vue';
+import HelloWorld from '@/components/HelloWorld.vue';
 
 test('should work', async ({ page, mount }) => {
   await mount(HelloWorld, {

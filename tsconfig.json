@@ -20,8 +20,10 @@
     "types": ["vite/client", "node"],
     "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": [
+        "src/*"
+      ]
+    },
   },
   "include": [
     "src/**/*.ts",

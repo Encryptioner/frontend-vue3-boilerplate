@@ -52,7 +52,5 @@ Contributions are welcome! Please follow the [code of conduct](./CODE_OF_CONDUCT
 1. Combined with [vite-boot](https://bestofvue.com/repo/vite--vue--typescript--vuerouter--pinia--tailwind-css--vueuse--template)
 
 ## My modifications
-1. 
-
-## My changelog
-1. 
+1. Eslint updated
+2. New views & component added

@@ -103,7 +103,7 @@ Vue 3 is now the default version -- congrats for the Vue team and the community!
 
 ## 1.4.0 (2021-08-04)
 
-- Feat: Added `vue-router` (it's easier to remove things than to add them in) and a couple of demo pages.
+- Feat: Added `vue-router` (it's easier to remove things than to add them in) and a couple of demo views.
 - Feat: Added `vercel.json` that works with `vue-router`. You can now publish this template on Vercel and everything Just Works.
 - Feat: Added `VITE_APP_BUILD_EPOCH` (generated build time as `new Date().getTime()`)
 - Feat: added `yarn preview` command.
