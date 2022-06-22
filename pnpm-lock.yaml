@@ -34,6 +34,7 @@ specifiers:
   lint-staged: ^12.4.0
   nprogress: ^0.2.0
   pinia: 2.0.14
+  pinia-plugin-persistedstate: ^1.6.1
   postcss: 8.4.14
   postcss-import: 14.1.0
   postcss-nesting: 10.1.7
@@ -58,6 +59,7 @@ dependencies:
   daisyui: 2.15.4_ugi4xkrfysqkt4c4y6hkyfj344
   nprogress: 0.2.0
   pinia: 2.0.14_qhv4oyzxhhzeba5rd2zztmcg2y
+  pinia-plugin-persistedstate: 1.6.1_pinia@2.0.14
   sass: 1.52.3
   theme-change: 2.0.2
   vue: 3.2.36
@@ -3484,6 +3486,14 @@ packages:
   /pify/2.3.0:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
+
+  /pinia-plugin-persistedstate/1.6.1_pinia@2.0.14:
+    resolution: {integrity: sha512-4re0ZO5KgqDnSNWX2RhJVIsIYvH+uaEGTN+UOx34mb7fVoE8A3CfB9QhbMT3Zn7ZSBXTfT2cgI/w7cLq2zNQMw==}
+    peerDependencies:
+      pinia: ^2.0.0
+    dependencies:
+      pinia: 2.0.14_qhv4oyzxhhzeba5rd2zztmcg2y
+    dev: false
 
   /pinia/2.0.14_qhv4oyzxhhzeba5rd2zztmcg2y:
     resolution: {integrity: sha512-0nPuZR4TetT/WcLN+feMSjWJku3SQU7dBbXC6uw+R6FLQJCsg+/0pzXyD82T1FmAYe0lsx+jnEDQ1BLgkRKlxA==}

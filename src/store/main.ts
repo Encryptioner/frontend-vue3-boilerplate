@@ -44,4 +44,7 @@ export const useMainStore = defineStore('main', {
       return !state.isInitialized;
     },
   },
+  persist: {
+    storage: window.sessionStorage,
+  },
 });
