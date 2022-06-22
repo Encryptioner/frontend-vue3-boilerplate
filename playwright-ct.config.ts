@@ -1,9 +1,9 @@
-import { type PlaywrightTestConfig, devices } from '@playwright/experimental-ct-vue'
+import { type PlaywrightTestConfig, devices } from '@playwright/experimental-ct-vue';
 
-import { resolve } from 'path'
-import vue from '@vitejs/plugin-vue'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
+import { resolve } from 'path';
+import vue from '@vitejs/plugin-vue';
+import AutoImport from 'unplugin-auto-import/vite';
+import Components from 'unplugin-vue-components/vite';
 
 const config: PlaywrightTestConfig = {
   testDir: './tests/component',
@@ -62,6 +62,6 @@ const config: PlaywrightTestConfig = {
       },
     },
   ],
-}
+};
 
-export default config
+export default config;

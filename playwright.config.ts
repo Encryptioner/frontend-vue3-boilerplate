@@ -1,4 +1,4 @@
-import { type PlaywrightTestConfig, devices } from '@playwright/test'
+import { type PlaywrightTestConfig, devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
   testDir: './tests/e2e',
@@ -35,6 +35,6 @@ const config: PlaywrightTestConfig = {
       },
     },
   ],
-}
+};
 
-export default config
+export default config;

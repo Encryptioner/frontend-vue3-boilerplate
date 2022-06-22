@@ -3,8 +3,8 @@ import { createPinia } from 'pinia';
 import App from '@/App.vue';
 import router from '@/router';
 import { createHead } from '@vueuse/head';
-import '@/styles/postcss';
-import '@/styles/scss';
+import '@/styles/postcss/index.postcss';
+import '@/styles/scss/index.scss';
 
 const head = createHead();
 const app = createApp(App);

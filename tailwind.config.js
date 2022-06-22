@@ -1,4 +1,4 @@
-const plugin = require('tailwindcss/plugin')
+const plugin = require('tailwindcss/plugin');
 // const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
@@ -7,25 +7,25 @@ module.exports = {
     extend: {
       fontFamily: {
         blackFont: [
-          "-apple-system",
-          "Noto Sans",
-          "Helvetica Neue",
-          "Helvetica",
-          "Nimbus Sans L",
-          "Arial",
-          "Liberation Sans",
-          "PingFang SC",
-          "Hiragino Sans GB",
-          "Noto Sans CJK SC",
-          "Source Han Sans SC",
-          "Source Han Sans CN",
-          "Microsoft YaHei",
-          "Wenquanyi Micro Hei",
-          "WenQuanYi Zen Hei",
-          "ST Heiti",
-          "SimHei",
-          "WenQuanYi Zen Hei Sharp",
-          "sans-serif",
+          '-apple-system',
+          'Noto Sans',
+          'Helvetica Neue',
+          'Helvetica',
+          'Nimbus Sans L',
+          'Arial',
+          'Liberation Sans',
+          'PingFang SC',
+          'Hiragino Sans GB',
+          'Noto Sans CJK SC',
+          'Source Han Sans SC',
+          'Source Han Sans CN',
+          'Microsoft YaHei',
+          'Wenquanyi Micro Hei',
+          'WenQuanYi Zen Hei',
+          'ST Heiti',
+          'SimHei',
+          'WenQuanYi Zen Hei Sharp',
+          'sans-serif',
         ],
       },
     },
@@ -35,19 +35,19 @@ module.exports = {
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
-    require("daisyui"),
+    require('daisyui'),
     plugin(function ({ addVariant, e, postcss }) {
       addVariant('firefox', ({ container, separator }) => {
         const isFirefoxRule = postcss.atRule({
           name: '-moz-document',
           params: 'url-prefix()',
-        })
-        isFirefoxRule.append(container.nodes)
-        container.append(isFirefoxRule)
+        });
+        isFirefoxRule.append(container.nodes);
+        container.append(isFirefoxRule);
         isFirefoxRule.walkRules((rule) => {
-          rule.selector = `.${e(`firefox${separator}${rule.selector.slice(1)}`)}`
-        })
-      })
+          rule.selector = `.${e(`firefox${separator}${rule.selector.slice(1)}`)}`;
+        });
+      });
     }),
   ],
   // daisyUI config (optional)
@@ -58,7 +58,7 @@ module.exports = {
     utils: true,
     logs: true,
     rtl: false,
-    prefix: "",
-    darkTheme: "dark",
+    prefix: '',
+    darkTheme: 'dark',
   },
-}
+};

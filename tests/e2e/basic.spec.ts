@@ -1,8 +1,8 @@
-import { test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test';
 
 test('homepage details', async ({ page }) => {
-  await page.goto('/')
+  await page.goto('/');
 
-  await expect(page).toHaveTitle('Vite + Vue 3 + TypeScript + Tailwind Starter Template')
-  await expect(page.locator('h2').first()).toHaveText('Hello World Component')
-})
+  await expect(page).toHaveTitle('Vite + Vue 3 + TypeScript + Tailwind Starter Template');
+  await expect(page.locator('h2').first()).toHaveText('Hello World Component');
+});

@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 
-import Index from '@/pages/Index.vue'
+import Index from '@/pages/Index.vue';
 
 const routes = [
   {
@@ -10,11 +10,11 @@ const routes = [
       title: 'Vite + Vue + TypeScript + Tailwind Starter Template',
     },
   },
-]
+];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
-})
+});
 
-export default router
+export default router;

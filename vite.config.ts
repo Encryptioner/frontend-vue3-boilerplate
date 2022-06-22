@@ -1,18 +1,18 @@
-import { resolve } from 'path'
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-import pkg from './package.json'
+import { resolve } from 'path';
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import AutoImport from 'unplugin-auto-import/vite';
+import Components from 'unplugin-vue-components/vite';
+import pkg from './package.json';
 
-process.env.VITE_APP_VERSION = pkg.version
+process.env.VITE_APP_VERSION = pkg.version;
 if (process.env.NODE_ENV === 'production') {
-  process.env.VITE_APP_BUILD_EPOCH = new Date().getTime().toString()
+  process.env.VITE_APP_BUILD_EPOCH = new Date().getTime().toString();
 }
 
 export default defineConfig({
   server: {
-    host: "localhost",
+    host: 'localhost',
     port: 8888,
     open: true,
     https: false,
@@ -49,7 +49,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-      @import "~/styles/variables.scss";
+      @import "@/styles/scss/variables.scss";
     `,
         javascriptEnabled: true,
       },
@@ -63,4 +63,4 @@ export default defineConfig({
       },
     },
   },
-})
+});

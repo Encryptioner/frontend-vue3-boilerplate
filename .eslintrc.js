@@ -40,10 +40,7 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'vue/multi-word-component-names': 0,
-    'no-var': 'error',
     'prettier/prettier': 'error',
-    'no-console': 'warn',
-    'no-debugger': 'warn',
     'no-duplicate-case': 'warn',
     'no-empty': 'warn',
     'no-extra-parens': 'off',
@@ -101,4 +98,4 @@ module.exports = {
     defineExpose: 'readonly',
     withDefaults: 'readonly',
   },
-}
+};
