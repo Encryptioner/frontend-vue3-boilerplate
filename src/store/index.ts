@@ -1,9 +1,16 @@
-import { counter } from '@/store/counter';
+import { useCounterStore } from '@/store/counter';
+import { useMainStore } from '@/store/main';
 
-const appStore: any = {};
+interface IAppUseStore {
+  counter: ReturnType<typeof useCounterStore>;
+  main: ReturnType<typeof useMainStore>;
+}
 
-export const registerStore = () => {
-  appStore.counter = counter();
+const useStore = {} as IAppUseStore;
+
+const registerStore = () => {
+  useStore.counter = useCounterStore();
+  useStore.main = useMainStore();
 };
 
-export default appStore;
+export { registerStore, useStore };

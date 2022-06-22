@@ -8,14 +8,14 @@
 
 <script setup lang="ts">
 // useStore, and computed are automatically imported. See vite.config.ts for details.
-const store = useStore();
-const count = computed(() => store.count);
+const mainStore = useStore.main;
+const count = computed(() => mainStore.count);
 const props = defineProps<{
   msg: string;
   optionalProp?: number;
 }>();
 
 function increment() {
-  store.increment();
+  mainStore.increment();
 }
 </script>

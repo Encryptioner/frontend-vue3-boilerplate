@@ -5,12 +5,12 @@
       <div class="display">
         <div class="artboard artboard-demo phone-1">
           <p class="text-10xl text-base font-medium uppercase tracking-wide">Counter:</p>
-          <!-- <p class="text-10xl text-base font-bold uppercase">
-            {{ appStore.counter }}
+          <p class="text-10xl text-base font-bold uppercase">
+            {{ counterStore.count }}
           </p>
-          <button type="button" class="btn btn-primary" @click="appStore.counter.increment()">
+          <button type="button" class="btn btn-primary" @click="counterStore.increment()">
             increment
-          </button> -->
+          </button>
         </div>
       </div>
     </div>
@@ -18,8 +18,13 @@
 </template>
 
 <script setup lang="ts">
-import appStore from '@/store/index';
-
-// TODO: There are two store named `store`. Combine them to one
-console.log(appStore);
+const counterStore = useStore.counter;
 </script>
+
+<!-- READING MATERIAL -->
+
+<!-- https://blog.logrocket.com/complex-vue-3-state-management-pinia/ -->
+
+<!-- https://medium.com/geekculture/emergency-pinia-course-7a80b8ed0b04 -->
+
+<!-- https://www.youtube.com/watch?v=059fh7Gobho -->
