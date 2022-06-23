@@ -95,7 +95,9 @@ function _log(
       // eslint-disable-next-line no-console
       console[type](msg, ...argsToPass);
     }
-  } catch (ignored) {}
+  } catch (ignored) {
+    console.error(ignored);
+  }
 }
 
 /**

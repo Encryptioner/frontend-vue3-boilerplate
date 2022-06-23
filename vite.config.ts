@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
+import checker from 'vite-plugin-checker';
 import pkg from './package.json';
 
 process.env.VITE_APP_VERSION = pkg.version;
@@ -20,6 +21,12 @@ export default defineConfig({
   },
   plugins: [
     vue(),
+    checker({
+      typescript: true,
+      eslint: {
+        lintCommand: 'eslint "./src/**/*.{ts,tsx,vue,js,jsx}"',
+      },
+    }),
     AutoImport({
       imports: [
         'vue',

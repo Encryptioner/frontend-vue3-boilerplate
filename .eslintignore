@@ -2,3 +2,4 @@ node_modules
 dist
 .vscode
 components.d.ts
+src/auto-imports.d.ts
