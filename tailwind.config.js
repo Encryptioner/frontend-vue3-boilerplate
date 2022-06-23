@@ -27,6 +27,7 @@ module.exports = {
           'WenQuanYi Zen Hei Sharp',
           'sans-serif',
         ],
+        poppins: ['Poppins', 'Avenir', 'sans-serif'],
       },
     },
   },
