@@ -1,29 +1,23 @@
 # Vite + Vue 3 + Typescript + Tailwind Starter
 
-Simple, opinionated, **fully typed**, and **production-ready** project template for Vite.
-
-This template is **practical** and **batteries included** but not overly complex or bloated. Also explicit configuration over magic; it should be easy to understand how everything works, strip out anything you don't need, and fast to modify things to your needs.
-
-Includes plenty of **examples and documentation** of how to do things but **minimal cruft** to delete to get you going.
-
-Please [check out the homepage](https://vite-ts-tailwind-starter.vercel.app/) for full docs. A [detailed changelog](./CHANGES.md) is available. This repository is also [mirrored on GitLab](https://gitlab.com/uninen/vite-ts-tailwind-starter).
+Simple, opinionated, **fully typed**, and **production-ready** boilerplate.
 
 ## Features
 
-- Vue 3.2
-- Pinia store (fully typed Vuex store is available up to version 1.13)
-- Routing using [vue-router 4](https://router.vuejs.org/)
-- TypeScript 4.7
-- Automatic package and component imports w/ [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) and [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
-- Tailwind CSS 3 w/ following plugins and configuration preinstalled:
-  - `@tailwindcss/aspect-ratio`
-  - `@tailwindcss/line-clamp`
-  - `@tailwindcss/typography`
-  - `@tailwindcss/forms`
+- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/) - born with fastness
+- 💪 [Typescript 4.7](https://www.typescriptlang.org/) - of course! necessary
+- 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
+- 🍍 [State Management via Pinia 2 with persistedstate](https://pinia.esm.dev/) - The official Vue Store that you will enjoy using
+- 💡 [Vue Router v4](https://router.vuejs.org/zh/) - The official router for Vue.js
+- 🎉 [NProgress](https://github.com/rstacruz/nprogress) - Page loading progress feedback
+- 🎨 [Tailwind CSS v3](https://tailwindcss.com/docs/configuration) w/ following plugins and configuration preinstalled:
+  - [tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
+  - [tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
+  - [tailwindcss/line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp)
+  - [tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
   - `firefox`-variant
+- Automatic package and component imports w/ [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) and [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
 - PostCSS 8 w/ `postcss-nesting` plugin and `cssnano` for minimizing production CSS
-- Eslint
-- Prettier
 - Alias `@` to `<project_root>/src`
 - Predefined and fully typed global variables:
   - `VITE_APP_VERSION` is read from `package.json` version at build time
@@ -38,19 +32,46 @@ Please [check out the homepage](https://vite-ts-tailwind-starter.vercel.app/) fo
   - Automated e2e tests
 - GitLab CI config available up to versions 2.x
 
-## Elsewhere
+### Coding Style
 
-- [Follow @uninen](https://twitter.com/uninen) on Twitter
-- Read my continuously updating learnings from Vite / Vue / TypeScript and other Web development topics from my [Today I Learned site](https://til.unessa.net/)
+- [Eslint](https://eslint.org/docs/user-guide/getting-started)
+- [Prettier](https://prettier.io/docs/en/install.html)
+- [prettier-plugin-tailwindcss](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier) - Automatic Class Sorting with Prettier
 
-## Contributing
+### Recommended IDE Setup
 
-Contributions are welcome! Please follow the [code of conduct](./CODE_OF_CONDUCT.md) when interacting with others.
+- [VSCode](https://code.visualstudio.com/)
+- [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+
+
+## Project setup
+
+### install the dependencies
+```bash
+pnpm i
+```
+
+### Development
+
+Just run and visit http://localhost:8888
+
+```bash
+pnpm run dev
+```
+
+### Build
+
+To build the App, run
+
+```bash
+pnpm run build
+```
+
+And you will see the generated file in `dist` that ready to be served.
 
 
 ## NOTE
-1. Combined with [vite-boot](https://bestofvue.com/repo/vite--vue--typescript--vuerouter--pinia--tailwind-css--vueuse--template)
-
-## My modifications
-1. Eslint updated
-2. New views & component added
+1. Starter repositories:
+  - [https://github.com/Uninen/vite-ts-tailwind-starter](https://github.com/Uninen/vite-ts-tailwind-starter)
+  - [vite-boot](https://github.com/kirklin/vite-boot)
+  
