@@ -1,6 +1,6 @@
 # Vite + Vue 3 + Typescript + Tailwind Starter
 
-Simple, opinionated, **fully typed**, and **production-ready** boilerplate.
+Simple, **fully typed** boilerplate.
 
 ## Features
 
