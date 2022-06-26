@@ -6,12 +6,12 @@ module.exports = {
   bracketSpacing: true,
   overrides: [
     {
-      files: "*.json",
+      files: '*.json',
       options: {
         printWidth: 200,
       },
     },
   ],
-  arrowParens: "always",
-  plugins: [require("prettier-plugin-tailwindcss")],
+  arrowParens: 'always',
+  plugins: [require('prettier-plugin-tailwindcss')],
 };

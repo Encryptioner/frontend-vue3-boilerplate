@@ -43,10 +43,10 @@ Simple, opinionated, **fully typed**, and **production-ready** boilerplate.
 - [VSCode](https://code.visualstudio.com/)
 - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
 
-
 ## Project setup
 
 ### install the dependencies
+
 ```bash
 pnpm i
 ```
@@ -69,9 +69,9 @@ pnpm run build
 
 And you will see the generated file in `dist` that ready to be served.
 
-
 ## NOTE
+
 1. Starter repositories:
-  - [https://github.com/Uninen/vite-ts-tailwind-starter](https://github.com/Uninen/vite-ts-tailwind-starter)
-  - [vite-boot](https://github.com/kirklin/vite-boot)
-  
+
+- [https://github.com/Uninen/vite-ts-tailwind-starter](https://github.com/Uninen/vite-ts-tailwind-starter)
+- [vite-boot](https://github.com/kirklin/vite-boot)

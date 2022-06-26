@@ -1,5 +1,6 @@
 <template>
-  <div title="Change Theme" class="dropdown-end dropdown">
+  <!-- eslint-disable-next-line prettier/prettier -->
+  <div title="Change Theme" class="dropdown dropdown-end">
     <div tabindex="0" class="btn btn-ghost gap-1 normal-case">
       <svg
         width="20"
