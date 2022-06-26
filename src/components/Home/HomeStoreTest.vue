@@ -9,7 +9,7 @@
             {{ counterStore.count }}
           </p>
           <button type="button" class="btn btn-primary" @click="counterStore.increment()">
-            increment
+            <FolderAddIcon class="h-5 w-5 text-red-500"></FolderAddIcon>increment
           </button>
         </div>
       </div>
@@ -18,6 +18,8 @@
 </template>
 
 <script setup lang="ts">
+import { FolderAddIcon } from '@heroicons/vue/solid';
+
 const counterStore = useStore.counter;
 </script>
 
