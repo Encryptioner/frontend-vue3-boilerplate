@@ -1,5 +1,5 @@
 <template>
-  <div class="relative min-h-screen py-8">
+  <div class="relative py-8">
     <div
       class="absolute inset-0 bg-[url(/img/grid.svg)] bg-top [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
     ></div>
