@@ -12,7 +12,6 @@ declare module '@vue/runtime-core' {
     Navbar: typeof import('./src/components/Layout/Navbar/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    StoreTest: typeof import('./src/components/Home/StoreTest.vue')['default']
     ThemeChange: typeof import('./src/components/Layout/Navbar/ThemeChange.vue')['default']
   }
 }
