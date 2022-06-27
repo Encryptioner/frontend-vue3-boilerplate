@@ -18,8 +18,8 @@
 
 <script setup lang="ts">
 // useStore, and computed are automatically imported. See vite.config.ts for details.
-const mainStore = useStore.main;
-const count = computed(() => mainStore.count);
+const home1Store = useStore.home1;
+const count = computed(() => home1Store.count);
 const props = defineProps<{
   msg: string;
   optionalProp?: number;
@@ -28,10 +28,22 @@ const props = defineProps<{
 const finalRoundedClass = ref<string>(`rounded-${count ? 'full' : 'md'}`);
 
 function increment() {
-  mainStore.increment();
+  home1Store.increment();
 }
 
 function reset() {
-  mainStore.$reset();
+  home1Store.$reset();
 }
 </script>
+
+<style scoped lang="scss">
+.btn-primary {
+  @apply rounded-lg bg-blue-500 py-2 px-4 font-semibold text-white shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+}
+</style>
+
+<style scoped lang="postcss">
+.btn-secondary {
+  @apply rounded-lg bg-red-500 py-2 px-4 font-semibold text-white shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+}
+</style>

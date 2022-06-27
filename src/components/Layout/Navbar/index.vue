@@ -8,11 +8,27 @@
           <div
             class="font-title inline-flex text-lg text-primary transition-all duration-200 md:text-3xl"
           >
-            <span class="text-accent">V<span class="lowercase">ite</span></span>
-            <span class="text-base-content">B<span class="lowercase">oot</span></span>
+            <span class="text-accent">B<span class="lowercase">oiler</span></span>
+            <span class="text-base-content">P<span class="lowercase">late</span></span>
           </div>
         </a>
       </div>
+
+      <div class="flex flex-1 md:gap-1 lg:gap-2">
+        <a
+          href="/home2"
+          aria-current="page"
+          aria-label="Homepage"
+          class="flex-0 btn btn-ghost px-2"
+        >
+          <div
+            class="font-title inline-flex text-lg text-primary transition-all duration-200 md:text-3xl"
+          >
+            Home 2
+          </div>
+        </a>
+      </div>
+
       <div class="flex-0">
         <ThemeChange />
         <span
@@ -23,7 +39,7 @@
             <a
               aria-label="Github"
               target="_blank"
-              href="https://github.com/kirklin/vite-boot"
+              href="https://github.com/Encryptioner/frontend-vue3-boilerplate"
               class="btn btn-ghost btn-square drawer-button normal-case"
             >
               <svg

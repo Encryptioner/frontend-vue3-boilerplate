@@ -1,16 +1,16 @@
-import { useCounterStore } from '@/store/counter';
-import { useMainStore } from '@/store/main';
+import { useHome2Store } from '@/store/home2';
+import { useHome1Store } from '@/store/home1';
 
 interface IAppUseStore {
-  counter: ReturnType<typeof useCounterStore>;
-  main: ReturnType<typeof useMainStore>;
+  home2: ReturnType<typeof useHome2Store>;
+  home1: ReturnType<typeof useHome1Store>;
 }
 
 const useStore = {} as IAppUseStore;
 
 const registerStore = () => {
-  useStore.counter = useCounterStore();
-  useStore.main = useMainStore();
+  useStore.home2 = useHome2Store();
+  useStore.home1 = useHome1Store();
 };
 
 export { registerStore, useStore };

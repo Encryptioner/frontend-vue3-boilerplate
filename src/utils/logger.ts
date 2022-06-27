@@ -60,7 +60,7 @@ function _log(
     argsToPass.push(args);
   }
 
-  const editorLabelText = `ViteBoot`;
+  const editorLabelText = `frontend-vue3-boilerplate`;
   const editorLabelStyle = `line-height: 1em;
             color: #006FEA;
             display: inline-block;

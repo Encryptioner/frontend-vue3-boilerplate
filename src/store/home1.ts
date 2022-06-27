@@ -8,20 +8,13 @@
 
 import { defineStore } from 'pinia';
 
-interface IMainState {
-  debug: boolean;
-  version: string;
-  isInitialized: boolean;
-  count: number;
-}
-
 const versionString =
   import.meta.env.MODE === 'development'
     ? import.meta.env.VITE_APP_VERSION + '-dev'
     : import.meta.env.VITE_APP_VERSION;
 
-export const useMainStore = defineStore('main', {
-  state: (): IMainState => ({
+export const useHome1Store = defineStore('home1', {
+  state: () => ({
     debug: import.meta.env.MODE === 'development',
     version: versionString,
     isInitialized: false,
