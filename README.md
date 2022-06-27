@@ -56,7 +56,7 @@ pnpm i
 Just run and visit http://localhost:8888
 
 ```bash
-pnpm run dev
+pnpm dev
 ```
 
 ### Build
@@ -64,7 +64,7 @@ pnpm run dev
 To build the App, run
 
 ```bash
-pnpm run build
+pnpm build
 ```
 
 And you will see the generated file in `dist` that ready to be served.
