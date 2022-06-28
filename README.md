@@ -73,7 +73,7 @@ And you will see the generated file in `dist` that ready to be served.
 
 1. Starter repositories:
 
-- [https://github.com/Uninen/vite-ts-tailwind-starter](https://github.com/Uninen/vite-ts-tailwind-starter)
+- [vite-ts-tailwind-starter](https://github.com/Uninen/vite-ts-tailwind-starter)
 - [vite-boot](https://github.com/kirklin/vite-boot)
 
 2. Merged and updated repository is [here](https://github.com/Encryptioner/frontend-vue3-boilerplate)
