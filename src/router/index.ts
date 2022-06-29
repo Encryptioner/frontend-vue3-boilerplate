@@ -16,6 +16,11 @@ const routes: RouteRecordRaw[] = [
     name: 'Home2',
     component: () => import('@/views/Home2.vue'),
   },
+  {
+    path: '/ecommerce',
+    name: 'Ecommerce',
+    component: () => import('@/views/Ecommerce.vue'),
+  },
 ];
 
 const router = createRouter({

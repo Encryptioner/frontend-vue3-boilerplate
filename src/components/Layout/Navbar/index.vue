@@ -14,9 +14,9 @@
         </a>
       </div>
 
-      <div class="flex flex-1 md:gap-1 lg:gap-2">
+      <div v-for="navView in navViews" :key="navView.title" class="flex flex-1 md:gap-1 lg:gap-2">
         <a
-          href="/home2"
+          :href="navView.route"
           aria-current="page"
           aria-label="Homepage"
           class="flex-0 btn btn-ghost px-2"
@@ -24,7 +24,7 @@
           <div
             class="font-title inline-flex text-lg text-primary transition-all duration-200 md:text-3xl"
           >
-            Home 2
+            {{ navView.title }}
           </div>
         </a>
       </div>
@@ -62,4 +62,20 @@
 </template>
 <script setup lang="ts">
 import ThemeChange from '@/components/Layout/Navbar/ThemeChange.vue';
+
+interface INavView {
+  title: string;
+  route: string;
+}
+
+const navViews: INavView[] = reactive([
+  {
+    title: 'Home2',
+    route: '/home2',
+  },
+  {
+    title: 'Ecommerce',
+    route: '/ecommerce',
+  },
+]);
 </script>

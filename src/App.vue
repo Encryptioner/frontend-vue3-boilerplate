@@ -1,7 +1,7 @@
 <template>
   <div class="antialiased">
     <Navbar />
-    <RouterView class="min-h-screen" />
+    <RouterView />
     <Footer />
   </div>
 </template>
