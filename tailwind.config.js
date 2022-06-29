@@ -29,6 +29,15 @@ module.exports = {
         ],
         poppins: ['Poppins', 'Avenir', 'sans-serif'],
       },
+      colors: {
+        'new-blue': {
+          5: '#EBF2FF',
+          60: '#2979FF',
+        },
+        'new-gray': {
+          50: '#787885',
+        },
+      },
     },
   },
   plugins: [

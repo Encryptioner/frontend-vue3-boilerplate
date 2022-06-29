@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^16.2.3
   '@commitlint/config-conventional': ^16.2.1
+  '@headlessui/vue': ^1.6.5
   '@heroicons/vue': ^1.0.6
   '@pinia/testing': 0.0.12
   '@playwright/experimental-ct-vue': 1.22.2
@@ -56,6 +57,7 @@ specifiers:
   wait-on: 6.0.1
 
 dependencies:
+  '@headlessui/vue': 1.6.5_vue@3.2.36
   '@heroicons/vue': 1.0.6_vue@3.2.36
   '@vueuse/core': 8.7.3_vue@3.2.36
   '@vueuse/head': 0.7.6_vue@3.2.36
@@ -355,6 +357,15 @@ packages:
     dependencies:
       '@hapi/hoek': 9.3.0
     dev: true
+
+  /@headlessui/vue/1.6.5_vue@3.2.36:
+    resolution: {integrity: sha512-C/BeTVuowTDLkGgUd6UfiPZVDLdR7OTnd8o4wF37Ub9Js1uhQ3XSTfitdZvlJALUqeQ30j+5Hk3KyjVDLQ3GYQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      vue: 3.2.36
+    dev: false
 
   /@heroicons/vue/1.0.6_vue@3.2.36:
     resolution: {integrity: sha512-ng2YcCQrdoQWEFpw+ipFl2rZo8mZ56v0T5+MyfQQvNqfKChwgP6DMloZLW+rl17GEcHkE3H82UTAMKBKZr4+WA==}
