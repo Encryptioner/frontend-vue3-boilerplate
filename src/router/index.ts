@@ -23,8 +23,10 @@ const routes: RouteRecordRaw[] = [
   },
 ];
 
+const historyPath = import.meta.env.ROUTE_HISTORY_PATH;
+
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(historyPath?.length ? historyPath : '/'),
   routes,
 });
 

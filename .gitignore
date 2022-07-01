@@ -38,3 +38,7 @@ lerna-debug.log*
 LOCAL_NOTES.md
 /playwright/.cache
 package-lock.json
+
+# Deploy files
+.github/page-deploy.sh
+.env

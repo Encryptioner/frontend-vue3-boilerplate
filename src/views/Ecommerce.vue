@@ -35,7 +35,7 @@
           <MenuButton
             class="flex w-full justify-center justify-between rounded-none rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-new-gray-0 focus:outline-none"
           >
-            <span>Collapsed filters</span>
+            <span>Expanded filters</span>
             <ChevronDownIcon class="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
           </MenuButton>
         </div>
