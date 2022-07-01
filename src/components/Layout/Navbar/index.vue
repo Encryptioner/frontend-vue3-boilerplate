@@ -4,7 +4,12 @@
   >
     <nav class="navbar w-full">
       <div class="flex flex-1 md:gap-1 lg:gap-2">
-        <a href="/" aria-current="page" aria-label="Homepage" class="flex-0 btn btn-ghost px-2">
+        <a
+          :href="homeRoute"
+          aria-current="page"
+          aria-label="Homepage"
+          class="flex-0 btn btn-ghost px-2"
+        >
           <div
             class="font-title inline-flex text-lg text-primary transition-all duration-200 md:text-3xl"
           >
@@ -62,20 +67,23 @@
 </template>
 <script setup lang="ts">
 import ThemeChange from '@/components/Layout/Navbar/ThemeChange.vue';
+import { historyPath } from '@/configs/client.config.json';
 
 interface INavView {
   title: string;
   route: string;
 }
 
+const homeRoute = `${window.location.origin}${historyPath}`;
+
 const navViews: INavView[] = reactive([
   {
     title: 'Home2',
-    route: '/home2',
+    route: `${window.location.origin}${historyPath}home2`,
   },
   {
     title: 'Ecommerce',
-    route: '/ecommerce',
+    route: `${window.location.origin}${historyPath}ecommerce`,
   },
 ]);
 </script>

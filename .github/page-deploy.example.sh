@@ -36,6 +36,8 @@ cd -
 # NOTE:
 # 1. Setup ssh key for github: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh
 # 2. Execute this file by running `bash page-deploy.sh` from this directory
-# 3. Check https://github.com/Anoesj/vue-vite-gh-pages-template
+# 3. Check https://github.com/Anoesj/vue-vite-gh-pages-template for `404` page
+# 4. Read https://dev.to/patarapolw/vite-on-github-pages-with-html5-history-mode-283j
+# 5. Read https://github.com/reiya0104/vite-vue-router-tailwind-test
 
 # REFERENCE: https://vitejs.dev/guide/static-deploy.html#github-pages
