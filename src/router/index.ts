@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import NProgress from 'nprogress';
+import { historyPath } from '@/configs/client.config.json';
 
 import Index from '@/views/Index.vue';
 
@@ -23,10 +24,8 @@ const routes: RouteRecordRaw[] = [
   },
 ];
 
-const historyPath = import.meta.env.ROUTE_HISTORY_PATH;
-
 const router = createRouter({
-  history: createWebHistory(historyPath?.length ? historyPath : '/'),
+  history: createWebHistory(historyPath),
   routes,
 });
 

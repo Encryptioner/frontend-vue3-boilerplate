@@ -39,6 +39,6 @@ LOCAL_NOTES.md
 /playwright/.cache
 package-lock.json
 
-# Deploy files
+# Deploy & config files
 .github/page-deploy.sh
-.env
+src/configs/client.config.json

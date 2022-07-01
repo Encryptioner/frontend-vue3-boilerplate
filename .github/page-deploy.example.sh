@@ -36,5 +36,6 @@ cd -
 # NOTE:
 # 1. Setup ssh key for github: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh
 # 2. Execute this file by running `bash page-deploy.sh` from this directory
+# 3. Check https://github.com/Anoesj/vue-vite-gh-pages-template
 
 # REFERENCE: https://vitejs.dev/guide/static-deploy.html#github-pages
