@@ -8,6 +8,7 @@ on:
   push:
     branches:
     - development
+    - task/ecommerce
   pull_request:
     paths:
       - 'src/**'

@@ -36,6 +36,10 @@ const routes: RouteRecordRaw[] = [
       title: `${titlePrefix} - Ecommerce`,
     },
   },
+  {
+    path: '/:catchAll(.*)',
+    component: () => import('@/views/404.vue'),
+  },
 ];
 
 const router = createRouter({
