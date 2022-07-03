@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper.21dcd24c.js";import{o as t,b as r}from"./index.c025810f.js";const c={},n={class:"my-10 min-h-screen text-center text-3xl text-red-600"};function o(s,_){return t(),r("p",n," Unfortunately, 404 ")}var m=e(c,[["render",o]]);export{m as default};
