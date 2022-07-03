@@ -67,23 +67,24 @@
 </template>
 <script setup lang="ts">
 import ThemeChange from '@/components/Layout/Navbar/ThemeChange.vue';
-import { historyPath } from '@/configs/client.config.json';
 
 interface INavView {
   title: string;
   route: string;
 }
 
-const homeRoute = `${window.location.origin}${historyPath}`;
+const basePath = import.meta.env.BASE_URL;
+
+const homeRoute = `${window.location.origin}${basePath}`;
 
 const navViews: INavView[] = reactive([
   {
     title: 'Home2',
-    route: `${window.location.origin}${historyPath}home2`,
+    route: `${window.location.origin}${basePath}home2`,
   },
   {
     title: 'Ecommerce',
-    route: `${window.location.origin}${historyPath}ecommerce`,
+    route: `${window.location.origin}${basePath}ecommerce`,
   },
 ]);
 </script>

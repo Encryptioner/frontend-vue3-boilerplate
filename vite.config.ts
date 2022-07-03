@@ -5,6 +5,7 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import checker from 'vite-plugin-checker';
 import pkg from './package.json';
+import { basePath } from './src/configs/client.config.json';
 
 process.env.VITE_APP_VERSION = pkg.version;
 if (process.env.NODE_ENV === 'production') {
@@ -12,6 +13,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 export default defineConfig({
+  base: basePath,
   server: {
     host: 'localhost',
     port: 8888,
