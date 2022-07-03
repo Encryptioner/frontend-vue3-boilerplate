@@ -14,7 +14,7 @@
               <img
                 class="mb-1 h-5 w-5"
                 :src="focusedNavMenu === i ? navMenu.activeIcon : navMenu.inactiveIcon"
-              />
+              >
               <span
                 class="text-sm"
                 :class="
@@ -22,8 +22,7 @@
                     ? 'font-medium text-new-blue-60'
                     : 'font-normal text-new-gray-50'
                 "
-                >{{ navMenu.title }}</span
-              >
+              >{{ navMenu.title }}</span>
             </div>
           </li>
         </ul>
@@ -37,7 +36,8 @@
           <button
             id="menu-button"
             type="button"
-            class="flex w-full justify-between rounded-t bg-new-gray-0 px-4 py-2 text-sm font-medium text-gray-700 focus:outline-none"
+            class="flex w-full justify-between rounded-t bg-new-gray-0
+            px-4 py-2 text-sm font-medium text-gray-700 focus:outline-none"
             aria-expanded="true"
             aria-haspopup="true"
             :class="{ 'rounded-b !bg-white shadow-[0px_4px_4px_0px_#00000040]': !isFilterMenuOpen }"
@@ -58,7 +58,8 @@
         </div>
 
         <div
-          class="absolute right-0 mt-0 w-full origin-top-right rounded-none rounded-b bg-new-gray-0 focus:outline-none"
+          class="absolute right-0 mt-0 w-full origin-top-right rounded-none
+          rounded-b bg-new-gray-0 focus:outline-none"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
@@ -74,16 +75,16 @@
             <input
               type="checkbox"
               :checked="filter === 'Recommended'"
-              class="checkbox checkbox-xs mt-2.5 ml-4 rounded-none border-2 border-new-gray-2 bg-[#E7E7E7] focus:ring-0"
-            />
+              class="checkbox checkbox-xs mt-2.5 ml-4 rounded-none border-2
+              border-new-gray-2 bg-[#E7E7E7] focus:ring-0"
+            >
             <a
               id="menu-item-2"
               href="#"
               class="block px-4 py-2 text-sm text-gray-700"
               role="menuitem"
               tabindex="-1"
-              >{{ filter }}</a
-            >
+            >{{ filter }}</a>
           </div>
         </div>
       </div>

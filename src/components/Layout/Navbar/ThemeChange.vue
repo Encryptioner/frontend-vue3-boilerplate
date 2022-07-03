@@ -1,7 +1,12 @@
 <template>
-  <!-- eslint-disable-next-line prettier/prettier -->
-  <div title="Change Theme" class="dropdown dropdown-end">
-    <div tabindex="0" class="btn btn-ghost gap-1 normal-case">
+  <div
+    title="Change Theme"
+    class="dropdown dropdown-end"
+  >
+    <div
+      tabindex="0"
+      class="btn btn-ghost gap-1 normal-case"
+    >
       <svg
         width="20"
         height="20"
@@ -14,7 +19,9 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="2"
-          d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+          d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4
+          4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2
+          0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
         />
       </svg>
       <span class="hidden md:inline">Theme</span>
@@ -29,9 +36,13 @@
       </svg>
     </div>
     <div
-      class="scrollbar dropdown-content rounded-t-box rounded-b-box top-px mt-16 h-[70vh] max-h-96 w-52 overflow-y-auto bg-base-200 text-base-content shadow-2xl"
+      class="scrollbar dropdown-content rounded-t-box rounded-b-box
+      top-px mt-16 h-[70vh] max-h-96 w-52 overflow-y-auto bg-base-200 text-base-content shadow-2xl"
     >
-      <div class="grid grid-cols-1 gap-3 p-3" tabindex="0">
+      <div
+        class="grid grid-cols-1 gap-3 p-3"
+        tabindex="0"
+      >
         <div
           v-for="theme in themes"
           :key="theme.id"

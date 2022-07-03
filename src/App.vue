@@ -10,5 +10,5 @@
 import { logLabeled } from '@/utils/logger';
 import Navbar from './components/Layout/Navbar/index.vue';
 import Footer from './components/Layout/Footer.vue';
-logLabeled("I'm ready!  ⸜(๑'ᵕ'๑)⸝⋆*", 'log', '', 'color: #66ccff');
+logLabeled('I\'m ready!  ⸜(๑\'ᵕ\'๑)⸝⋆*', 'log', '', 'color: #66ccff');
 </script>
