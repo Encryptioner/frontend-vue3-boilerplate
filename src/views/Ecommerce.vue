@@ -7,7 +7,6 @@
           v-for="(navMenu, i) of navMenus"
           :key="i"
           class="menu menu-horizontal rounded-[10px] p-0"
-          :class="{ 'bg-new-blue-5': focusedNavMenu == i }"
           @click="focusedNavMenu = i"
         >
           <li>
