@@ -7,7 +7,6 @@ name: page-deploy
 on:
   push:
     branches:
-    - task/ecommerce
     - development
   pull_request:
     paths:
@@ -51,7 +50,7 @@ jobs:
     - name: Set config file
       # JSON.stringify ur config file and set it as a secret named CLIENT_CONFIG for the repo
       # and add that config in desired config file location
-      run:  printf ${{ secrets.CLIENT_CONFIG }} >> src/configs/client.config.json && cat src/configs/client.config.json
+      run:  printf ${{ secrets.CLIENT_CONFIG }} >> src/configs/client.config.json
 
     - name: Build app
       run: pnpm build
