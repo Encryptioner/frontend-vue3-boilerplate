@@ -24,7 +24,6 @@
     "test:ci-ct": "playwright test -c playwright-ct.config.ts"
   },
   "dependencies": {
-    "@headlessui/vue": "^1.6.5",
     "@heroicons/vue": "^1.0.6",
     "@vueuse/core": "^8.3.1",
     "@vueuse/head": "0.7.6",

@@ -30,50 +30,61 @@
       </div>
     </div>
     <div class="mt-10 w-[355px] caret-transparent">
-      <Menu as="div" class="relative inline-block w-[304px] text-left">
+      <div class="relative inline-block w-[304px] text-left">
         <div>
-          <MenuButton
-            class="flex w-full justify-center justify-between rounded-none rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-new-gray-0 focus:outline-none"
+          <button
+            id="menu-button"
+            type="button"
+            class="flex w-full justify-between rounded-t bg-new-gray-0 px-4 py-2 text-sm font-medium text-gray-700 focus:outline-none"
+            aria-expanded="true"
+            aria-haspopup="true"
+            :class="{ 'rounded-b !bg-white shadow-[0px_4px_4px_0px_#00000040]': !isFilterMenuOpen }"
+            @click="isFilterMenuOpen = !isFilterMenuOpen"
           >
-            <span>Expanded filters</span>
-            <ChevronDownIcon class="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
-          </MenuButton>
+            <span>{{ isFilterMenuOpen ? 'Expanded filters' : 'Closed filters' }}</span>
+            <ChevronDownIcon
+              class="-mr-1 ml-2 h-5 w-5"
+              aria-hidden="true"
+              :class="{ hidden: isFilterMenuOpen }"
+            />
+            <ChevronUpIcon
+              class="-mr-1 ml-2 h-5 w-5"
+              aria-hidden="true"
+              :class="{ hidden: !isFilterMenuOpen }"
+            />
+          </button>
         </div>
 
-        <transition
-          enter-active-class="transition ease-out duration-100"
-          enter-from-class="transform opacity-0 scale-95"
-          enter-to-class="transform opacity-100 scale-100"
-          leave-active-class="transition ease-in duration-75"
-          leave-from-class="transform opacity-100 scale-100"
-          leave-to-class="transform opacity-0 scale-95"
+        <div
+          class="absolute right-0 mt-0 w-full origin-top-right rounded-none rounded-b bg-new-gray-0 focus:outline-none"
+          role="menu"
+          aria-orientation="vertical"
+          aria-labelledby="menu-button"
+          tabindex="-1"
+          :class="{ hidden: !isFilterMenuOpen }"
         >
-          <MenuItems
-            class="absolute right-0 mt-0 w-full origin-top-right divide-y divide-gray-100 rounded-none rounded-md bg-new-gray-0 ring-1 ring-black ring-opacity-5 focus:outline-none"
+          <div
+            v-for="filter in ['Recommended', 'Recently Added', 'Expiring Soon']"
+            :key="filter"
+            class="flex py-1"
+            role="none"
           >
-            <div
-              v-for="filter in ['Recommended', 'Recently Added', 'Expiring Soon']"
-              :key="filter"
-              class="flex py-1"
-              role="none"
+            <input
+              type="checkbox"
+              :checked="filter === 'Recommended'"
+              class="checkbox checkbox-xs mt-2.5 ml-4 rounded-none border-2 border-new-gray-2 bg-[#E7E7E7] focus:ring-0"
+            />
+            <a
+              id="menu-item-2"
+              href="#"
+              class="block px-4 py-2 text-sm text-gray-700"
+              role="menuitem"
+              tabindex="-1"
+              >{{ filter }}</a
             >
-              <input
-                type="checkbox"
-                :checked="filter === 'Recommended'"
-                class="checkbox checkbox-xs mt-2.5 ml-4 rounded-none border-2 border-new-gray-2 bg-[#DADADA] focus:ring-0"
-              />
-              <a
-                id="menu-item-2"
-                href="#"
-                class="block px-4 py-2 text-sm text-gray-700"
-                role="menuitem"
-                tabindex="-1"
-                >{{ filter }}</a
-              >
-            </div>
-          </MenuItems>
-        </transition>
-      </Menu>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -81,7 +92,6 @@
 <script setup lang="ts">
 import type { Ref } from 'vue';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/vue/solid';
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue';
 
 import hanger from '@/assets/ecommerce/top-nav/hanger.svg';
 import hangerActive from '@/assets/ecommerce/top-nav/hanger-active.svg';
@@ -109,13 +119,14 @@ import shipWheel from '@/assets/ecommerce/top-nav/ship-wheel.svg';
 import shipWheelActive from '@/assets/ecommerce/top-nav/ship-wheel-active.svg';
 
 const focusedNavMenu: Ref<number> = ref(0);
+const isFilterMenuOpen: Ref<boolean> = ref(true);
 interface INavMenu {
   title: string;
   inactiveIcon: string;
   activeIcon: string;
 }
 
-const navMenus: Ref<INavMenu[]> = ref([
+const navMenus: INavMenu[] = [
   { title: 'Clothing & Shoes', inactiveIcon: hanger, activeIcon: hangerActive },
   { title: 'Entertainment', inactiveIcon: cinema, activeIcon: cinemaActive },
   { title: 'Music', inactiveIcon: concert, activeIcon: concertActive },
@@ -128,6 +139,6 @@ const navMenus: Ref<INavMenu[]> = ref([
   { title: 'Mother care', inactiveIcon: babysitter, activeIcon: babysitterActive },
   { title: 'Toys & Entertainment', inactiveIcon: nuclearStation, activeIcon: nuclearStationActive },
   { title: 'Vintage', inactiveIcon: shipWheel, activeIcon: shipWheelActive },
-]);
+];
 </script>
 <style scoped></style>
