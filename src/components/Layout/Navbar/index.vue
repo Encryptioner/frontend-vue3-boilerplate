@@ -1,8 +1,8 @@
 <template>
   <div
-    class="sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 text-base-content backdrop-blur transition-all duration-100"
+    class="sticky top-0 z-30 flex min-h-[64px] w-full justify-center bg-opacity-90 text-base-content backdrop-blur transition-all duration-100"
   >
-    <nav class="navbar w-full">
+    <nav class="navbar w-full flex-wrap">
       <div class="flex flex-1 md:gap-1 lg:gap-2">
         <a
           :href="homeRoute"

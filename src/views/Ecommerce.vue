@@ -1,5 +1,6 @@
 <template>
   <div class="min-h-screen px-2">
+    <!-- Top nav -->
     <div class="navbar flex-wrap border-b-2 border-gray-500 bg-base-100">
       <div class="flex-wrap gap-1">
         <ul
@@ -29,6 +30,8 @@
         </ul>
       </div>
     </div>
+    <!-- Top nav end -->
+    <!-- Filter dropdown -->
     <div class="mt-10 w-[355px] caret-transparent">
       <div class="relative inline-block w-[304px] text-left">
         <div>
@@ -86,6 +89,7 @@
         </div>
       </div>
     </div>
+    <!-- Filter dropdown end -->
   </div>
 </template>
 
