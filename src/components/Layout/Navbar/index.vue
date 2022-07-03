@@ -79,7 +79,11 @@ const homeRoute = `${window.location.origin}${basePath}`;
 
 const navViews: INavView[] = reactive([
   {
-    title: 'Home2',
+    title: 'Home',
+    route: `${window.location.origin}${basePath}home`,
+  },
+  {
+    title: 'Home 2',
     route: `${window.location.origin}${basePath}home2`,
   },
   {

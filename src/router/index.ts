@@ -1,25 +1,40 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import NProgress from 'nprogress';
 
-import Index from '@/views/Index.vue';
+const titlePrefix = 'Vite + Vue + TypeScript + Tailwind Starter Template';
 
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    component: Index,
+    name: 'Index',
+    component: () => import('@/views/Ecommerce.vue'),
     meta: {
-      title: 'Vite + Vue + TypeScript + Tailwind Starter Template',
+      title: `${titlePrefix} - Ecommerce`,
+    },
+  },
+  {
+    path: '/home',
+    name: 'Home',
+    component: () => import('@/views/Home.vue'),
+    meta: {
+      title: `${titlePrefix} - Home`,
     },
   },
   {
     path: '/home2',
     name: 'Home2',
     component: () => import('@/views/Home2.vue'),
+    meta: {
+      title: `${titlePrefix} - Home 2`,
+    },
   },
   {
     path: '/ecommerce',
     name: 'Ecommerce',
     component: () => import('@/views/Ecommerce.vue'),
+    meta: {
+      title: `${titlePrefix} - Ecommerce`,
+    },
   },
 ];
 
