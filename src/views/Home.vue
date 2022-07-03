@@ -1,8 +1,8 @@
 <template>
-  <div class="relative py-8">
+  <div class="relative min-h-screen py-8">
     <div
       class="absolute inset-0 bg-[url(/img/grid.svg)]
-      bg-top [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
+      [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
     />
     <div
       class="container relative mx-auto max-w-2xl bg-white
@@ -15,7 +15,7 @@
         </p>
       </header>
       <main>
-        <div class="prose prose-indigo mx-auto p-4 sm:rounded-md md:px-6">
+        <div class="prose-indigo prose mx-auto p-4 sm:rounded-md md:px-6">
           <HelloWorld msg="Hello World Component" />
         </div>
       </main>

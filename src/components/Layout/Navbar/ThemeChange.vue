@@ -1,7 +1,7 @@
 <template>
   <div
     title="Change Theme"
-    class="dropdown dropdown-end"
+    class="dropdown-end dropdown"
   >
     <div
       tabindex="0"
@@ -56,10 +56,10 @@
           >
             <div class="grid grid-cols-5 grid-rows-3">
               <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                <div class="flex-grow text-sm font-bold">
+                <div class="grow text-sm font-bold">
                   {{ theme.id }}
                 </div>
-                <div class="flex flex-shrink-0 flex-wrap gap-1">
+                <div class="flex shrink-0 flex-wrap gap-1">
                   <div class="w-2 rounded bg-primary" />
                   <div class="w-2 rounded bg-secondary" />
                   <div class="w-2 rounded bg-accent" />

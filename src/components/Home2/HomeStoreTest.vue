@@ -3,7 +3,7 @@
     <div class="mockup-phone">
       <div class="camera" />
       <div class="display">
-        <div class="artboard artboard-demo phone-1">
+        <div class="phone-1 artboard artboard-demo">
           <p class="text-10xl text-base font-medium uppercase tracking-wide">
             Counter:
           </p>
