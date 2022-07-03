@@ -49,10 +49,9 @@ jobs:
       run: pnpm i
     
     - name: Set config file
-      # JSON.stringify ur config file and set it as a variable named clientConfig
+      # JSON.stringify ur config file and set it as a secret named CLIENT_CONFIG for the repo
       # and add that config in desired config file location
-      # TODO: set config file as a secret in github
-      run: clientConfig='{"basePath":"/frontend-vue3-boilerplate/","test":0,"test1":{"0":[100,200],"xxx":"100"},"test2":["xxxx","xxx2"]}' && printf "${clientConfig}" >> src/configs/client.config.json
+      run:  printf ${{ secrets.CLIENT_CONFIG }} >> src/configs/client.config.json
 
     - name: Build app
       run: pnpm build
