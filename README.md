@@ -76,3 +76,12 @@ And you will see the generated file in `dist` that ready to be served.
 - [vite-boot](https://github.com/kirklin/vite-boot)
 
 2. Merged and updated repository is [here](https://github.com/Encryptioner/frontend-vue3-boilerplate)
+
+
+---
+
+## Support
+
+If you find my work useful, consider supporting it:
+
+[![SupportKori](https://img.shields.io/badge/SupportKori-☕-FFDD00?style=flat-square)](https://www.supportkori.com/mirmursalinankur)
